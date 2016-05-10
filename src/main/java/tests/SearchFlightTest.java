@@ -36,7 +36,7 @@ public class SearchFlightTest {
     public void searchForFlights() {
         driver.get("https://www.expedia.com/");
         HomePage homePage = new HomePage(driver);
-        homePage.fillFormWithData(driver);
+        homePage.fillFormWithData();
         homePage.clickOnSearch();
         //TODO: Assert results
     }

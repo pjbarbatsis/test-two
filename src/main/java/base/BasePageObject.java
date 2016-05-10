@@ -8,12 +8,10 @@ import org.openqa.selenium.firefox.FirefoxDriver;
  */
 public class BasePageObject {
 
-    public BasePageObject() {
-
-    }
+    public WebDriver driver;
 
     public BasePageObject(WebDriver driver){
-        driver = new FirefoxDriver();
+        this.driver = driver;
 
     }
 }
